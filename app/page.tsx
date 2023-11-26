@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { Typewriter } from "react-simple-typewriter";
 import frenzyImage from './frenzy.png';
-
+import prajeshImage from './prajesh.png';
 function Home() {
   const teamMembers = [
     { name: 'FrenzyVJN', role: 'CTF, Web Developer' },
@@ -89,14 +89,20 @@ function Home() {
                 <h1 className='text-slate-400'>Fullstack developer specializing in frontend engineering</h1>
               </div>
             </div>
+            <div className='border rounded-lg w-fit p-5 my-5 flex items-center'>
+              <Image className='rounded-full border border-black' src={prajeshImage} alt="hotaru" width={100} height={100} />
+              <div className='ml-4'>
+                <a href='https://frenzyvjn.tech/'>
+                  <h1>hotaru</h1>
+                </a>
+                <h1 className='text-slate-400'>Graphics designer, Frontend dev and aspiring game dev. Part-time grass toucher.</h1>
+              </div>
+            </div>
             <div className='border rounded-lg w-fit p-5'>
               <h1>DrunkenCloud</h1>
               <h1 className='text-slate-400'>Will be updated soon...</h1>
             </div>
-            <div className='border rounded-lg w-fit p-5 my-5'>
-              <h1>hotaru</h1>
-              <h1 className='text-slate-400'>Will be updated soon...</h1>
-            </div>
+
           </div>
         </div>
       </div>
