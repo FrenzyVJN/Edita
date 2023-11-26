@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import { Typewriter } from "react-simple-typewriter";
-import frenzy from '../public/frenzy.png';
+import frenzyImage from './frenzy.png';
 
 function Home() {
   const teamMembers = [
@@ -82,9 +82,12 @@ function Home() {
             <h1 className="w-fit md:fit xl:w-fit xl:text-start text-4xl sm:w-fit sm:text-6xl lg:text-6xl font-bolt text-textPrimary uppercase">
               Our Team
             </h1>
-            <div className='border rounded-lg w-fit p-5 my-5'>
-              <h1>FrenzyVJN</h1>
-              <h1 className='text-slate-400'>Fullstack developer specializing in frontend engineering</h1>
+            <div className='border rounded-lg w-fit p-5 my-5 flex items-center'>
+              <Image className='rounded-full border border-black' src={frenzyImage} alt="FrenzyVJN" width={100} height={100} />
+              <div className='ml-4'>
+                <h1>FrenzyVJN</h1>
+                <h1 className='text-slate-400'>Fullstack developer specializing in frontend engineering</h1>
+              </div>
             </div>
             <div className='border rounded-lg w-fit p-5'>
               <h1>DrunkenCloud</h1>
