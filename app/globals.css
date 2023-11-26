@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 .animate-movingBg{
     animation: movingBg infinite 12s linear;
     background-size: 100% 500%;
