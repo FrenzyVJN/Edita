@@ -12,7 +12,7 @@ function Main() {
                 words={["Hackers", "Developer", "CTF Players","Bug Bounty Hunters"]}
                 cursor
                 cursorStyle="_"
-                typeSpeed={250}
+                typeSpeed={50}
                 deleteSpeed={150}
                 loop
               />
