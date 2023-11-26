@@ -3,11 +3,64 @@ import Image from 'next/image';
 import { Typewriter } from "react-simple-typewriter";
 import frenzyImage from './frenzy.png';
 import prajeshImage from './prajesh.png';
+import { FaEnvelope, FaLinkedin, FaGithub, FaDiscord } from 'react-icons/fa';
 function Home() {
   const teamMembers = [
     { name: 'FrenzyVJN', role: 'CTF, Web Developer' },
     { name: 'DrunkenCloud', role: 'CTF' },
     { name: 'hotaru', role: 'Graphic Designer' },
+  ];
+  const socialMedias1 = [
+    {
+      href: 'mailto:vjn@frenzyvjn.tech',
+      ariaLabel: 'Compose an email to FrenzyVJN',
+      title: 'Write an Email to FrenzyVJN',
+      Icon: FaEnvelope,
+    },
+    {
+      href: 'https://www.linkedin.com/in/vijayan-sankar/',
+      ariaLabel: 'Goes to Vijayan Sankar\'s LinkedIn profile',
+      title: 'LinkedIn Profile',
+      Icon: FaLinkedin,
+    },
+    {
+      href: 'https://github.com/FrenzyVJN',
+      ariaLabel: 'Goes to FrenzyVJN\'s GitHub profile',
+      title: 'GitHub Profile',
+      Icon: FaGithub,
+    },
+    {
+      href: 'https://discord.com/users/813371659738021919',
+      ariaLabel: 'Goes to FrenzyVJN\'s Discord profile',
+      title: 'Discord Profile',
+      Icon: FaDiscord,
+    },
+  ];
+  const socialMedias2 = [
+    {
+      href: 'mailto:vjn@frenzyvjn.tech',
+      ariaLabel: 'Compose an email to hotaru',
+      title: 'Write an Email to hotaru',
+      Icon: FaEnvelope,
+    },
+    {
+      href: 'https://www.linkedin.com/in/prajesh-raam/',
+      ariaLabel: 'Goes to Vijayan Sankar\'s LinkedIn profile',
+      title: 'LinkedIn Profile',
+      Icon: FaLinkedin,
+    },
+    {
+      href: 'https://github.com/hotaru-hspr',
+      ariaLabel: 'Goes to hotaru\'s GitHub profile',
+      title: 'GitHub Profile',
+      Icon: FaGithub,
+    },
+    {
+      href: 'https://discord.com/users/528963356082700289',
+      ariaLabel: 'Goes to hotaru\'s Discord profile',
+      title: 'Discord Profile',
+      Icon: FaDiscord,
+    },
   ];
 
   const skills = ['Forensics', 'OSINT', 'Crypto', 'Web', 'Reversing', 'Pwn', 'Mobile', 'Misc','Python'];
@@ -56,7 +109,7 @@ function Home() {
           </div>
         </div>
 
-        <div className=' w-fit md:ml-32 mt-10'>
+        <div className='w-fit py-10 md:ml-32 mt-10'>
           {/* About Our Team Section */}
           <div id='home' className='text-white text-xl p-4'>
             <h1></h1>
@@ -85,17 +138,54 @@ function Home() {
             <div className='border rounded-lg w-fit p-5 my-5 flex items-center'>
               <Image className='rounded-full border border-black' src={frenzyImage} alt="FrenzyVJN" width={100} height={100} />
               <div className='ml-4'>
-                <h1>FrenzyVJN</h1>
-                <h1 className='text-slate-400'>Fullstack developer specializing in frontend engineering</h1>
+              <a href='https://frenzyvjn.tech/'>
+                <h1 className='md:text-xl text-md'>FrenzyVJN</h1>
+              </a>
+                <h1 className='text-slate-400 md:text-lg text-sm'>Fullstack developer specializing in frontend engineering</h1>
+                <section className="w-full md:w-2/3 lg:w-1/2">
+                  <div className="flex items-center mt-2">
+                    {socialMedias1.map((socialMedia1, index) => (
+                      <a
+                        key={index}
+                        href={socialMedia1.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={socialMedia1.ariaLabel}
+                        title={socialMedia1.title}
+                        className="text-white mr-4"
+                      >
+                        <socialMedia1.Icon className="w-6 h-6" />
+                      </a>
+                    ))}
+                  </div>
+                </section>
               </div>
+
             </div>
             <div className='border rounded-lg w-fit p-5 my-5 flex items-center'>
               <Image className='rounded-full border border-black' src={prajeshImage} alt="hotaru" width={100} height={100} />
               <div className='ml-4'>
-                <a href='https://frenzyvjn.tech/'>
-                  <h1>hotaru</h1>
+                <a href='https://hoshi-pro.tech/'>
+                  <h1 className='md:text-xl text-md'>hotaru</h1>
                 </a>
-                <h1 className='text-slate-400'>Graphics designer, Frontend dev and aspiring game dev. Part-time grass toucher.</h1>
+                <h1 className='text-slate-400 md:text-lg text-sm'>Graphics designer, Frontend dev and aspiring game dev. Part-time grass toucher.</h1>
+                <section className="w-full md:w-2/3 lg:w-1/2">
+                  <div className="flex items-center mt-2">
+                    {socialMedias2.map((socialMedia2, index) => (
+                      <a
+                        key={index}
+                        href={socialMedia2.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={socialMedia2.ariaLabel}
+                        title={socialMedia2.title}
+                        className="text-white mr-4"
+                      >
+                        <socialMedia2.Icon className="w-6 h-6" />
+                      </a>
+                    ))}
+                  </div>
+                </section>
               </div>
             </div>
             <div className='border rounded-lg w-fit p-5'>
