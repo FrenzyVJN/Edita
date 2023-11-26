@@ -3,7 +3,9 @@ import Image from 'next/image';
 import { Typewriter } from "react-simple-typewriter";
 import frenzyImage from './frenzy.png';
 import prajeshImage from './prajesh.png';
-import { FaEnvelope, FaLinkedin, FaGithub, FaDiscord } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaDiscord, FaCode, FaSearch, FaLock, FaDesktop, FaUndo, FaMobile, FaCog, FaPython } from 'react-icons/fa';
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 function Home() {
   const teamMembers = [
     { name: 'FrenzyVJN', role: 'CTF, Web Developer' },
@@ -84,29 +86,57 @@ function Home() {
   };
 
   return (
-    <main className='bg-gradient-to-b from-slate-950 via-slate-700 to-slate-950 animate-movingBg w-screen min-h-screen'>
+    <main className='bg-gradient-to-b from-slate-950 via-slate-700 to-slate-950 animate-movingBg w-fit md:w-screen lg:w-screen xl:w-screen min-h-screen'>
       <div className='pt-8'>
         <div className='flex mx-auto py-3 shadow-lg px-3 backdrop-filter backdrop-blur-lg shadow-white border rounded-xl h-fit gap-2 md:gap-5 border-white w-fit transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-opacity-40 bg-inherit hover:bg-black duration-300 flex-wrap'>
-          <div className='nav-item'>
-            <a href='#home' className='text-white font-bolt text-textPrimary uppercase text-sm md:text-xl font-bold'>
-              Home
-            </a>
-          </div>
-          <div className='nav-item'>
-            <a href='#our-team' className='text-white font-bolt text-textPrimary uppercase text-sm md:text-xl font-bold'>
-              Team
-            </a>
-          </div>
-          <div className='nav-item'>
-            <a href='#our-skills' className='text-white font-bolt text-textPrimary uppercase text-sm md:text-xl font-bold'>
-              Skills
-            </a>
-          </div>
-          <div className='nav-item'>
-            <a href='#contact-us' className='text-white font-bolt text-textPrimary uppercase text-sm md:text-xl font-bold'>
-              Contact Us
-            </a>
-          </div>
+        <div className='nav-item'>
+  <Link
+    to='home'
+    spy={true}
+    smooth={true}
+    offset={-70} // Adjust the offset based on your layout
+    duration={500}
+    className='text-white font-bolt text-textPrimary uppercase text-sm md:text-xl font-bold'
+  >
+    Home
+  </Link>
+</div>
+<div className='nav-item'>
+  <Link
+    to='our-team'
+    spy={true}
+    smooth={true}
+    offset={-70} // Adjust the offset based on your layout
+    duration={500}
+    className='text-white font-bolt text-textPrimary uppercase text-sm md:text-xl font-bold'
+  >
+    Team
+  </Link>
+</div>
+<div className='nav-item'>
+  <Link
+    to='skills'
+    spy={true}
+    smooth={true}
+    offset={-70} // Adjust the offset based on your layout
+    duration={500}
+    className='text-white font-bolt text-textPrimary uppercase text-sm md:text-xl font-bold'
+  >
+    Skills
+  </Link>
+</div>
+<div className='nav-item'>
+  <Link
+    to='contact-us'
+    spy={true}
+    smooth={true}
+    offset={-70} // Adjust the offset based on your layout
+    duration={500}
+    className='text-white font-bolt text-textPrimary uppercase text-sm md:text-xl font-bold'
+  >
+    Contact Us
+  </Link>
+</div>
         </div>
 
         <div className='w-fit py-10 md:ml-32 mt-10'>
@@ -138,7 +168,7 @@ function Home() {
             <div className='border rounded-lg w-fit p-5 my-5 flex items-center'>
               <Image className='rounded-full border border-black' src={frenzyImage} alt="FrenzyVJN" width={100} height={100} />
               <div className='ml-4'>
-              <a href='https://frenzyvjn.tech/'>
+              <a href='https://frenzyvjn.tech/' target="_blank" rel="noopener noreferrer">
                 <h1 className='md:text-xl text-md'>FrenzyVJN</h1>
               </a>
                 <h1 className='text-slate-400 md:text-lg text-sm'>Fullstack developer specializing in frontend engineering</h1>
@@ -165,7 +195,7 @@ function Home() {
             <div className='border rounded-lg w-fit p-5 my-5 flex items-center'>
               <Image className='rounded-full border border-black' src={prajeshImage} alt="hotaru" width={100} height={100} />
               <div className='ml-4'>
-                <a href='https://hoshi-pro.tech/'>
+                <a href='https://hoshi-pro.tech/' target="_blank" rel="noopener noreferrer">
                   <h1 className='md:text-xl text-md'>hotaru</h1>
                 </a>
                 <h1 className='text-slate-400 md:text-lg text-sm'>Graphics designer, Frontend dev and aspiring game dev. Part-time grass toucher.</h1>
@@ -192,12 +222,49 @@ function Home() {
               <h1>DrunkenCloud</h1>
               <h1 className='text-slate-400'>Will be updated soon...</h1>
             </div>
-
+          </div>
+            {/* Overall Team Skills Section */}
+            <div id='skills' className='border rounded-lg w-3/4 p-5 my-5 flex flex-col items-center ml-4'>
+              <h1 className='text-lg md:text-2xl font-bold mb-2 text-white'>Overall Team Skills</h1>
+              <div className='grid grid-col-1 md:grid-cols-3 md:gap-4 gap-4'>
+                {skills.map((skill, index) => (
+                  <div key={index} className='flex items-center w-full text-slate-400 border sm:w-fit border-white text-center rounded-lg p-3 md:p-3'>
+                    {renderIcon(skill)} {/* Rendering the appropriate icon based on skill */}
+                    <span className='ml-2'>{skill}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </main>
   );
 }
+
+// Function to render the appropriate icon based on skill
+const renderIcon = (skill : String) => {
+  switch (skill) {
+    case 'Forensics':
+      return <FaSearch className='w-6 h-6' />;
+    case 'OSINT':
+      return <FaDesktop className='w-6 h-6' />;
+    case 'Crypto':
+      return <FaLock className='w-6 h-6' />;
+    case 'Web':
+      return <FaCode className='w-6 h-6' />;
+    case 'Reversing':
+      return <FaUndo className='w-6 h-6' />;
+    case 'Pwn':
+      return <FaCog className='w-6 h-6' />;
+    case 'Mobile':
+      return <FaMobile className='w-6 h-6' />;
+    case 'Misc':
+      return <FaDesktop className='w-6 h-6' />;
+    case 'Python':
+      return <FaPython className='w-6 h-6' />;
+    default:
+      return null;
+  }
+};
 
 export default Home;

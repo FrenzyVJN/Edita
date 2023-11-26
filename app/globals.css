@@ -16,3 +16,8 @@
         background-position: 0 400% ;
     }
     }  
+
+html {
+        scroll-behavior: smooth;
+}
+      
