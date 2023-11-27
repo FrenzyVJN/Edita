@@ -6,12 +6,12 @@ import Header from './header';
 function Home() {
   return (
     <main className='bg-gradient-to-b from-slate-950 via-slate-800 to-slate-950 animate-movingBg min-h-screen'>
-        <div className='w-fit'>
           <Header />
-          <Main />
-          <Team />
-          <Skills />
-        </div>
+          <div className='max-w-[1300px] mx-auto'>
+            <Main />
+            <Team />
+            <Skills />
+          </div>
     </main>
   );
 }

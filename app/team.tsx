@@ -87,8 +87,8 @@ const socialMedias1 = [
 function Team() {
     
     return ( 
-        <main className='h-screen justify-center'>
-        <div id='our-team' className='text-white text-xl p-4'>
+        <main className='h-screen flex items-center'>
+        <div id='our-team' className='text-white w-fit text-xl p-4'>
             <h1></h1>
             <p></p>
             <h1 className="w-fit md:fit xl:w-fit xl:text-start text-4xl sm:w-fit sm:text-6xl lg:text-6xl font-bolt text-textPrimary uppercase">
