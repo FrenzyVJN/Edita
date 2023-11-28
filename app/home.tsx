@@ -9,10 +9,10 @@ function Main() {
           <br />
           <span className="text-blue-300 absolute">
               <Typewriter
-                words={["Hackers", "Developer", "CTF Players","Bug Bounty Hunters"]}
+                words={["Hackers", "Developers", "CTF Players","Bug Bounty Hunters"]}
                 cursor
                 cursorStyle="_"
-                typeSpeed={50}
+                typeSpeed={200}
                 deleteSpeed={150}
                 loop
               />
