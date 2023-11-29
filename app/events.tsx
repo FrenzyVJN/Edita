@@ -1,7 +1,7 @@
 function Events() {
     return ( 
         <main className="flex justify-center items-center h-screen">
-            <div id='events' className=""></div>
+            <a href="/events" id='events' className="text-white">Coming soon...</a>
         </main>
      );
 }

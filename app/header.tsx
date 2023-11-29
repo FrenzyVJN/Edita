@@ -9,13 +9,13 @@ function Header() {
                         <h1 className="text-white text-md mr-2 md:text-4xl md:mr-10 ml-auto font-bold">HOME</h1>
                     </Link>
                     <Link to="our-team" smooth={true} duration={400} offset={-70}>
-                        <h1 className="text-white text-md mr-2 md:text-4xl md:mr-10 font-bold">TEAM</h1>
+                        <h1 className="text-white text-md mr-2 md:text-3xl md:mr-10 font-bold">TEAM</h1>
                     </Link>
-                    <Link to='skills' smooth={true} duration={400} offset={0}>
-                        <h1 className="text-white text-md mr-2 md:text-4xl md:mr-10 font-bold">SKILLS</h1>
+                    <Link to='skills' smooth={true} duration={400} offset={-150}>
+                        <h1 className="text-white text-md mr-2 md:text-3xl md:mr-10 font-bold">SKILLS</h1>
                     </Link>
                     <Link to='events' smooth={true} duration={400} offset={0}>
-                        <h1>EVENTS</h1>
+                        <h1 className="text-white text-md mr-2 md:text-3xl md:mr-10 font-bold">EVENTS</h1>
                     </Link>
                     <h1></h1>
                 </div>

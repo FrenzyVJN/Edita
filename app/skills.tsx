@@ -1,9 +1,11 @@
 import React from 'react';
 
-import { FaCode, FaSearch, FaLock, FaDesktop, FaUndo, FaMobile, FaCog, FaPython } from 'react-icons/fa';
+import { FaCode, FaSearch, FaLock, FaDesktop, FaUndo, FaMobile, FaCog, FaPython,} from 'react-icons/fa';
+import { TbBrandJavascript } from "react-icons/tb";
+
 
 function Skills() {
-  const skills = ['Forensics', 'OSINT', 'Crypto', 'Web', 'Reversing', 'Pwn', 'Misc', 'Python'];
+  const skills = ['Forensics', 'OSINT', 'Crypto', 'Web', 'Reversing', 'Pwn', 'Misc', 'Python', 'Javascript'];
 
   return (
     <main className='flex justify-center items-center h-screen'>
@@ -39,6 +41,8 @@ const renderIcon = (skill: String) => {
       return <FaDesktop className='w-8 h-8' />;
     case 'Python':
       return <FaPython className='w-8 h-8' />;
+    case 'Javascript':
+      return <TbBrandJavascript className='w-8 h-8' />;
     default:
       return null;
   }
