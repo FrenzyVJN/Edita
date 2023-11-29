@@ -14,6 +14,9 @@ function Header() {
                     <Link to='skills' smooth={true} duration={400} offset={0}>
                         <h1 className="text-white text-md mr-2 md:text-4xl md:mr-10 font-bold">SKILLS</h1>
                     </Link>
+                    <Link to='events' smooth={true} duration={400} offset={0}>
+                        <h1>EVENTS</h1>
+                    </Link>
                     <h1></h1>
                 </div>
             </div>
