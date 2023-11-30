@@ -1,7 +1,7 @@
 
 function Events() {
     return (
-        <main className='bg-gradient-to-b from-slate-950 via-slate-800 to-slate-950 animate-movingBg min-h-screen'>
+        <main className='bg-gradient-to-b from-slate-950 via-slate-800 to-slate-950 animate-movingBg min-h-screen md:px-20'>
             <div className="flex flex-col items-center justify-center h-full text-center">
                 <a href="/" className="text-blue-200 text-5xl py-5 animate__animated animate__fadeInDown">EditaCTF</a>
                 <h2 className="text-white text-3xl py-3 animate__animated animate__fadeInUp">December 4, 2023</h2>
