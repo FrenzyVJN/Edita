@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter, Montserrat} from 'next/font/google'
 import './globals.css'
 import 'animate.css/animate.min.css';
-import { useSpring, animated } from 'react-spring';
 
 const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({
