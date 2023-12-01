@@ -8,7 +8,7 @@ import 'animate.css';
 const Edita2023 = () => {
 
   return (
-    <main className='bg-gradient-to-b from-slate-950 via-slate-800 to-slate-950 animate-movingBg min-h-screen md:px-20'>
+    <main className='bg-gradient-to-b from-slate-950 via-slate-800 py-10 to-slate-950 animate-movingBg min-h-screen md:px-20'>
       <div className=''>
         <h1 className='text-4xl md:text-6xl font-bold mb-4 animate__animated animate__fadeInDown text-blue-400 py-10 text-center'>Edita CTF 2023!</h1>
         
