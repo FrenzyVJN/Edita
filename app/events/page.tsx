@@ -1,19 +1,31 @@
+import React from 'react';
 import Faq from "./faq";
-function Events() {
-    return (
-        <main className='bg-gradient-to-b from-slate-950 via-slate-800 to-slate-950 animate-movingBg min-h-screen p-5 md:px-20'>
-            <div className="flex flex-col items-center justify-center h-full text-center">
-                <a href="/" className="text-blue-200 text-5xl py-5 animate__animated animate__fadeInDown">EditaCTF</a>
-                <h2 className="text-white text-3xl py-3 animate__animated animate__fadeInUp">December 4, 2023</h2>
-                <p className="text-blue-300 text-lg animate__animated animate__fadeIn">Put your skills to the test in our first beginner-friendly Capture The Flag competition!</p>
-                <p className="text-blue-300 text-lg animate__animated animate__fadeIn">Join Team Edita for a thrilling cybersecurity challenge.</p>
-                
-                <a href="/forms">
-                    <h1 className="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-blue">Register Now</h1>
-                </a>
-            </div>
 
-            <div className="mt-16">
+function Events() {
+  return (
+    <main className='bg-gradient-to-b from-slate-950 via-slate-800 to-slate-950 animate-movingBg min-h-screen p-5 md:px-20'>
+      <div className="flex flex-col items-center justify-center h-full text-center">
+        <a href="/" className="text-blue-200 text-5xl py-5 animate__animated animate__fadeInDown">EditaCTF</a>
+        <h2 className="text-white text-3xl py-3 animate__animated animate__fadeInUp">December 4, 2023</h2>
+        <p className="text-blue-300 text-lg animate__animated animate__fadeIn">Put your skills to the test in our first beginner-friendly Capture The Flag competition!</p>
+        <p className="text-blue-300 text-lg animate__animated animate__fadeIn">Join Team Edita for a thrilling cybersecurity challenge.</p>
+
+        <a href="/forms">
+          <h1 className="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-blue">Register Now</h1>
+        </a>
+        
+        {/* Add the new button here */}
+        <h1 className='mt-4 mb-2 font-semibold text-blue-200'>Event Link</h1>
+        <button 
+          className=" bg-purple-500 bg-opacity-25 hover:bg-purple-600 hover:bg-opacity-25 text-white font-bold py-2 px-4 transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-yellow"
+          disabled={true} // Set to true for now, enable later
+        >
+          Coming Soon
+        </button>
+      </div>
+
+
+            <div className="mt-10">
                 <h2 className="text-blue-200 text-3xl py-5 animate__animated animate__fadeIn">Why EditaCTF?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div className="bg-slate-850 p-6 rounded-lg shadow-md shadow-blue-300 hover:shadow-xl hover:shadow-blue-400 transition duration-300 transform hover:scale-105">
