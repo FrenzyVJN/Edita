@@ -16,11 +16,13 @@ function Events() {
         
         {/* Add the new button here */}
         <h1 className='mt-4 mb-2 font-semibold text-blue-200'>Event Link</h1>
-        <button 
+        <button
           className=" bg-purple-500 bg-opacity-25 hover:bg-purple-600 hover:bg-opacity-25 text-white font-bold py-2 px-4 transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-yellow"
           disabled={true} // Set to true for now, enable later
         >
+        <a href="http://bit.ly/40lrO5P">
           Coming Soon
+        </a>
         </button>
       </div>
 
