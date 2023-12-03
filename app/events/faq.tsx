@@ -8,6 +8,10 @@ const Faq = () => {
       answer: "Edita CTF is a small CTF made by us to give our participants a basic understanding of online CTFs.",
     },
     {
+      question: "What are the timings for the CTF?",
+      answer: "The CTF will run from 6 pm 4th December to 8 pm 5th December. You can ask doubts in the Discord group, but no sharing flags, not that we can top you lol.",
+    },
+    {
       question: "Do I need to have good programming skills?",
       answer: "You don't need to have a high grasp of any programming language for this, but there may be some knowledge requirement for cryptography challenges which can be learned within the timeframe of the CTF.",
     },
@@ -23,10 +27,7 @@ const Faq = () => {
       question: "What if I don't find the answer?",
       answer: "If you're stuck, Google has all the answers you need. It might even give you the answer directly, but we hope you try to solve it yourselves after seeing the solution since there is no other point if you do that.",
     },
-    {
-      question: "What are the timings for the CTF?",
-      answer: "The CTF will run from 6 pm 4th December to 8 pm 5th December. You can ask doubts in the Discord group, but no sharing flags, not that we can top you lol.",
-    },
+
     {
       question: "Can I use AI tools?",
       answer: "If you want, try to use AI tools or any tools you want honestly. This is a competition for cybersecurity. There is no one way to get to the answer, and there are no boundaries.",
