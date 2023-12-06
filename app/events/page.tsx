@@ -6,7 +6,7 @@ function Events() {
     <main className='bg-gradient-to-b from-slate-950 via-slate-800 to-slate-950 animate-movingBg min-h-screen p-5 md:px-20'>
       <div className="flex flex-col items-center justify-center h-full text-center">
         <a href="/" className="text-blue-200 text-5xl py-5 animate__animated animate__fadeInDown">EditaCTF</a>
-        <h2 className="text-white text-3xl py-3 animate__animated animate__fadeInUp">December 4, 2023</h2>
+        <h2 className="text-white text-3xl py-3 animate__animated animate__fadeInUp">7pm December 4, 2023</h2>
         <p className="text-blue-300 text-lg animate__animated animate__fadeIn">Put your skills to the test in our first beginner-friendly Capture The Flag competition!</p>
         <p className="text-blue-300 text-lg animate__animated animate__fadeIn">Join Team Edita for a thrilling cybersecurity challenge.</p>
 
@@ -20,8 +20,8 @@ function Events() {
           className=" bg-purple-500 bg-opacity-25 hover:bg-purple-600 hover:bg-opacity-25 text-white font-bold py-2 px-4 transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-yellow"
           disabled={true} // Set to true for now, enable later
         >
-        <a href="http://bit.ly/40lrO5P">
-          Coming Soon
+        <a href="https://tryhackme.com/room/editactf2k23">
+          Click Here to Join
         </a>
         </button>
       </div>
