@@ -9,7 +9,7 @@ const Faq = () => {
     },
     {
       question: "What are the timings for the CTF?",
-      answer: "The CTF will run from 6 pm 4th December to 8 pm 5th December. You can ask doubts in the Discord group, but no sharing flags, not that we can top you lol.",
+      answer: "The CTF will run from 7 pm 6th December to 7 pm 8th December. You can ask doubts in the Discord group, but no sharing flags, not that we can top you lol.",
     },
     {
       question: "Do I need to have good programming skills?",
