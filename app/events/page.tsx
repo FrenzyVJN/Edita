@@ -11,7 +11,7 @@ function Events() {
         <p className="text-blue-300 text-lg animate__animated animate__fadeIn">Join Team Edita for a thrilling cybersecurity challenge.</p>
 
         <a href="/forms">
-          <h1 className="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-blue">Register Now</h1>
+          <h1 className="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-2xl transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-blue">Register Now</h1>
         </a>
         
         {/* Add the new button here */}
