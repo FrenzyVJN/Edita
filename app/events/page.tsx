@@ -17,7 +17,7 @@ function Events() {
         {/* Add the new button here */}
         <h1 className='mt-4 mb-2 font-semibold text-blue-200'>Event Link</h1>
         <button
-          className=" bg-white bg-opacity-100 hover:bg-white hover:bg-opacity-50 text-black font-bold py-2 px-4 transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-yellow"
+          className="bg-white bg-opacity-100 hover:bg-white hover:bg-opacity-50 text-black font-bold py-2 px-4 transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-yellow rounded-xl"
           disabled={true} // Set to true for now, enable later
         >
         <a href="https://tryhackme.com/room/editactf2k23">
@@ -29,7 +29,7 @@ function Events() {
 
             <div className="mt-10">
                 <h2 className="text-white text-3xl py-5 animate__animated animate__fadeIn">Want to Get Started?</h2>
-                <b><p className="text-white text-lg animate__animated animate__fadeIn">Get yourself acquainted with some basic knowledge of CTFs with our <a href="https://edita.frenzyvjn.tech/starter" className="text-blue-400 hover:underline">Starter Guide</a>.</p></b>
+                <p className="text-white text-lg animate__animated animate__fadeIn">Get yourself acquainted with some basic knowledge of CTFs with our <a href="https://edita.frenzyvjn.tech/starter" className="text-blue-400 hover:underline">Starter Guide</a>.</p>
                 <br />
                 <h2 className="text-blue-200 text-3xl py-5 animate__animated animate__fadeIn">Why EditaCTF?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
