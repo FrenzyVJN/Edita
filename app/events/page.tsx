@@ -20,7 +20,7 @@ function Events() {
           className="bg-white bg-opacity-100 hover:bg-white hover:bg-opacity-50 text-black font-bold py-2 px-4 transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-yellow rounded-2xl"
           disabled={true} // Set to true for now, enable later
         >
-        <a href="https://tryhackme.com/room/editactf2k23">
+        <a href="https://tryhackme.com/jr/editactf2023">
           Click Here to Join
         </a>
         </button>
