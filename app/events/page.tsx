@@ -28,8 +28,9 @@ function Events() {
 
 
             <div className="mt-10">
-                <h2 className="text-blue-200 text-3xl py-5 animate__animated animate__fadeIn">Want to Get Started?</h2>
-                <p className="text-blue-300 text-lg animate__animated animate__fadeIn">Get yourself acquainted with some basic knowledge of CTFs with our<a href="https://edita.frenzyvjn.tech/starter" className="text-blue-400 hover:underline">Starter Guide</a>.</p>
+                <h2 className="text-white text-3xl py-5 animate__animated animate__fadeIn">Want to Get Started?</h2>
+                <b><p className="text-white text-lg animate__animated animate__fadeIn">Get yourself acquainted with some basic knowledge of CTFs with our <a href="https://edita.frenzyvjn.tech/starter" className="text-blue-400 hover:underline">Starter Guide</a>.</p></b>
+                <br />
                 <h2 className="text-blue-200 text-3xl py-5 animate__animated animate__fadeIn">Why EditaCTF?</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div className="bg-slate-850 p-6 rounded-lg shadow-md shadow-blue-300 hover:shadow-xl hover:shadow-blue-400 transition duration-300 transform hover:scale-105">
