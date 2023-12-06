@@ -16,6 +16,7 @@ function Events() {
         
         {/* Add the new button here */}
         <h1 className='mt-4 mb-2 font-semibold text-blue-200'>Event Link</h1>
+        <p className='text-blue-300 text-lg animate__animated animate__fadeIn'>Remember to Make your own Account on tryhackme.com to access the CTF. Teams can use the same account if they want to do so.</p>
         <button
           className="bg-white bg-opacity-100 hover:bg-white hover:bg-opacity-50 text-black font-bold py-2 px-4 transition duration-300 transform hover:scale-105 focus:outline-none focus:shadow-outline-yellow rounded-2xl"
           disabled={true} // Set to true for now, enable later
