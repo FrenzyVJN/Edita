@@ -50,7 +50,7 @@ const Faq = () => {
         </div>
 
         {faqData.map((item, index) => (
-          <div key={index} className="bg-inherit my-3 text-white border p-3 md:w-full mx-auto rounded-lg animate__animated animate__fadeInDown shadow-md shadow-blue-300">
+          <div key={index} className="bg-inherit my-3 text-blue-200 border p-3 md:w-full mx-auto rounded-lg animate__animated animate__fadeInDown shadow-md shadow-blue-300">
             <div
               className="cursor-pointer flex justify-between items-center"
               onClick={() => handleAccordionClick(index)}
