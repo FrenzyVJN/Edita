@@ -1,7 +1,7 @@
 import { Link, animateScroll as scroll } from 'react-scroll';
 function Header() {
     return ( 
-        <main className="h-20 w-full">
+        <main className="backdrop-filter blur-md h-20 w-full">
             <div className="border w-full bg-white bg-opacity-10 fixed h-20 flex items-center">
                 <h1 className="text-white text-2xl md:text-6xl font-bold md:ml-10">edita</h1>
                 <div className="flex ml-auto">
